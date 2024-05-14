@@ -1,0 +1,36 @@
+@mixin button {
+    font-size: 16px;
+    background: $button-color ;
+    border: none;
+    height: 50px;
+    color: $white-color;
+    box-shadow: 0px 4px 10px 0px #00000040;
+    border-radius: 25px;
+    transition: 200ms ease-in-out;
+    cursor: pointer;
+  
+    &:hover {
+      opacity: 0.9;
+      box-shadow: 0px 4px 15px 0px #00000040;
+    }
+  }
+
+
+  @mixin heart {
+    background-image: linear-gradient(
+      to top,
+      $primary-color 20%,
+      $secondary-color 100%
+    );
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-image: $button-color;
+  }
+  
+
+  @mixin line {
+    border-bottom: 2px solid $line-color;
+    padding-bottom: 3px;
+    width: 40px;
+  }

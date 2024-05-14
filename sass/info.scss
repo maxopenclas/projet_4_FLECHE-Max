@@ -1,0 +1,30 @@
+@import "../sass/mixin.scss";
+
+.section-info {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    margin: 3px;
+
+    .section-info__title {
+        font-size: 24px;
+        text-align: center;
+        width: 75%;
+        margin-bottom: 15px;
+    }
+
+    .section-info__text {
+        text-align: center;
+        font-size: 18px;
+        color: $grey-color;
+        margin-top: 0px
+    }
+
+    .section-info__button {
+        @include button();
+        width: 60%;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+}

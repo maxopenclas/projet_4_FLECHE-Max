@@ -1,0 +1,32 @@
+@import "../sass/colors.scss";
+
+footer {
+    padding: 25px;
+     background-color: #353535;
+   margin-top: -20px;
+
+}
+
+footer p {
+    color: $white-color;
+}
+
+.list-lien {
+    gap: 5px;
+
+    .list-lien__logo {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: -20px;
+    }
+
+    .list-lien__gras {
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+.fa-utensils, .fa-handshake-angle {
+    color: $white-color;
+}

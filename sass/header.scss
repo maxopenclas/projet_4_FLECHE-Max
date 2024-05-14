@@ -1,0 +1,65 @@
+@import "./colors.scss";
+
+.header-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.header-top {
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    height: 63px;
+
+    .logo {
+        object-fit: contain;
+        height: 36px;
+        width: 100%;
+        padding-top: 13px;
+    }
+}
+
+.header-bottom {
+    background-color: $grey2-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50px;
+    gap: 20px;
+    align-items: center;
+    padding-left: 45px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    .header-bottom__text {
+        border: none;
+        background-color: $grey2-color;
+        font-size: 16px;
+    }
+}
+
+
+
+.header-menu {
+
+    display: flex;
+    flex-direction: row;
+    height: 63px;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+
+
+    &__logo {
+        width: 197px;
+        height: 36px;
+        padding-right: 100px;
+    }
+
+    &__lien {
+        color: $black-color;
+    }
+}
+
+.header-arrow {
+    color: $black-color;
+}

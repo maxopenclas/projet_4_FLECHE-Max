@@ -1,0 +1,30 @@
+@import "./restaurants.scss";
+@import "./colors.scss";
+@import "./header.scss";
+@import "./info.scss";
+@import "./fonctionnement.scss";
+@import "./footer.scss";
+@import "./menu.scss";
+
+body {
+    margin: auto;
+    font-family: "roboto";
+    background-color: $home-color;
+
+}
+  
+header {
+    width: 100%;
+}
+
+
+footer {
+    background-color: $grey-color;
+    color: $white-color;
+}
+
+a {
+    text-decoration: none; 
+    
+}
+
