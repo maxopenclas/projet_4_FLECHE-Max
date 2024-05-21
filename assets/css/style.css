@@ -479,6 +479,27 @@ footer p {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.2509803922);
 }
 
+.anim-entrees {
+  animation-name: entries;
+  animation-duration: 1.4s;
+  animation-delay: 250ms;
+  animation-fill-mode: forwards;
+}
+
+.anim-plats {
+  animation-name: entries;
+  animation-duration: 1.4s;
+  animation-delay: 500ms;
+  animation-fill-mode: forwards;
+}
+
+.anim-desserts {
+  animation-name: entries;
+  animation-duration: 1.4s;
+  animation-delay: 750ms;
+  animation-fill-mode: forwards;
+}
+
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -500,6 +521,16 @@ footer p {
   100% {
     opacity: 0;
     inset: 100%;
+  }
+}
+@keyframes entries {
+  0% {
+    transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
   }
 }
 .loader {
@@ -539,6 +570,16 @@ footer p {
   100% {
     opacity: 0;
     inset: 100%;
+  }
+}
+@keyframes entries {
+  0% {
+    transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
   }
 }
 body {

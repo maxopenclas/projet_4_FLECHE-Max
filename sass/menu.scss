@@ -174,3 +174,26 @@
     @include button;
     width: 186px;
 }
+
+.anim-entrees {
+    animation-name: entries;
+    animation-duration: 1.4s;
+    animation-delay: 250ms;
+    animation-fill-mode: forwards;
+}
+
+
+.anim-plats {
+    animation-name: entries;
+    animation-duration: 1.4s;
+    animation-delay: 500ms;
+    animation-fill-mode: forwards;
+}
+
+
+.anim-desserts {
+    animation-name: entries;
+    animation-duration: 1.4s;
+    animation-delay: 750ms;
+    animation-fill-mode: forwards;
+}
