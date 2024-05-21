@@ -1,0 +1,21 @@
+@import "../sass/colors.scss";
+@import "../sass/keyframes.scss"; 
+
+.loader {
+
+   animation: loader 3s forwards;
+   z-index: 1;
+    background-color: $white-color;
+    position: fixed;
+    right: 27%;
+    top: 23%;
+    
+
+   i {
+    color: $primary-color;
+    animation: spin 1s 2;
+    display: flex;
+    justify-content: center;
+    zoom: 3;
+   }
+}
