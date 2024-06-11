@@ -275,7 +275,8 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  left: 3%;
+  left: 3.5%;
+  transform: translateX(-50%);
 }
 
 .fa-mobile-screen-button {
@@ -634,11 +635,16 @@ a {
     display: flex;
     flex-direction: row;
   }
-  .list-card .list-card__number {
+  .list-card {
     position: relative;
+  }
+  .list-card i {
+    padding-left: 20px;
+  }
+  .list-card .list-card__number {
+    position: absolute;
     transform: translate(-50%, 50%);
-    top: -17%;
-    left: 0 !important;
+    top: -3%;
   }
   .fas1 {
     right: 59px;
@@ -690,8 +696,11 @@ a {
     justify-items: center;
     gap: 50px;
   }
-  .list-card__number {
-    left: 1%;
+  .list-card {
+    position: relative;
+  }
+  .list-card .list-card__number {
+    left: 0;
   }
   footer {
     display: flex;

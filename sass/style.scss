@@ -66,12 +66,16 @@ a {
     }
 
     .list-card {
-        
+        position: relative;
+
+        i {
+            padding-left: 20px;
+        }
         .list-card__number {
-            position: relative;
+            position: absolute;
             transform: translate(-50% , 50%);
-            top: -17%;
-            left: 0!important;
+            top: -3%;
+            
         }
     }
 
@@ -141,9 +145,12 @@ a {
     }
  }
 
+    .list-card{
+        position: relative;
     .list-card__number {
-        left: 1%;
+        left: 0;
     }
+}
 
     footer {
         display: flex;
