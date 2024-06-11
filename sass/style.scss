@@ -30,3 +30,145 @@ a {
     
 }
 
+@media (min-width: 1024px) {
+
+
+    .header-top {
+        box-shadow: none;
+    }
+
+    .header-bottom {
+        box-shadow: none;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .section-info {
+
+        .section-info__title {
+            font-size: 40px;
+        }
+
+        .section-info__button {
+            width: 215px;
+        }
+    }
+
+    .section-fonctionnement {
+        padding-left: 100px;
+        padding-right: 100px;
+    .section-fonctionnement__list {
+        display: flex;
+        flex-direction: row;
+        }
+    }
+
+    .list-card {
+        
+        .list-card__number {
+            position: relative;
+            transform: translate(-50% , 50%);
+            top: -17%;
+            left: 0!important;
+        }
+    }
+
+    .fas1 {
+        right: 59px;
+    }
+
+    .section-restaurants {
+        padding-left: 70px;
+        padding-right: 70px;
+        .section-restaurants__title {
+        padding-bottom: 20px;
+    }
+
+    .section-restaurants__container {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        justify-items: center;
+        gap: 50px;
+    }
+ }
+
+    .lien-nouveau1 {
+        right: 54%;
+    }
+
+    .lien-nouveau2 {
+        right: 8%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding-top: 50px;
+        
+    }
+
+    footer > img {
+        padding-left: 90px;
+    }
+
+   
+
+    .list-lien {
+        display: flex;
+        gap: 24px; 
+    }
+
+    
+}
+
+@media (min-width:768px) {
+ 
+    .section-restaurants {
+        padding-left: 70px;
+        padding-right: 70px;
+        .section-restaurants__title {
+        padding-bottom: 20px;
+    }
+
+    .section-restaurants__container {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        justify-items: center;
+        gap: 50px;
+    }
+ }
+
+    .list-card__number {
+        left: 1%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding-top: 50px;
+        
+    }
+
+    footer > img {
+        padding-left: 90px;
+    }
+
+   
+
+    .list-lien {
+        display: flex;
+        gap: 24px; 
+    }
+
+    .lien-nouveau1 {
+        right: 9%;
+    }
+
+    .lien-nouveau2 {
+        left: 36%;
+    }
+}
