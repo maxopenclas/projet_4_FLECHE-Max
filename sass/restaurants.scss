@@ -121,7 +121,16 @@
 .heart {
   
     padding-right: 25px;
+    position: relative;
+    outline: none;
     
+    &:focus-within {
+      .fas {
+        opacity: 1;
+        outline: none;
+      }
+    }
+
     a > p {
         margin-top: -17px;
     }
@@ -136,22 +145,18 @@
       justify-content: center;
       align-items: center;
       opacity: 0;
-      z-index: 2;
+      z-index: 0;
       transition-property: all;
       transition-duration: 600ms;
       height: 28px;
-    
+      cursor: pointer;
       @include heart;
 
-      &:hover {
+      &:focus, &:hover {
         opacity: 1;
+        outline: none;
       }
-  
-      &:active {
-        opacity: 1;
-      }
-
-    }
+   }
 
   }
 

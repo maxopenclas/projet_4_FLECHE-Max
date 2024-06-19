@@ -102,6 +102,12 @@
 
 .heart {
   padding-right: 25px;
+  position: relative;
+  outline: none;
+}
+.heart:focus-within .fas {
+  opacity: 1;
+  outline: none;
 }
 .heart a > p {
   margin-top: -17px;
@@ -115,21 +121,20 @@
   justify-content: center;
   align-items: center;
   opacity: 0;
-  z-index: 2;
+  z-index: 0;
   transition-property: all;
   transition-duration: 600ms;
   height: 28px;
+  cursor: pointer;
   background-image: linear-gradient(to top, #9356DC 20%, #FF79DA 100%);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-image: linear-gradient(to top, #9356DC, #FF79DA);
 }
-.heart .fas:hover {
+.heart .fas:focus, .heart .fas:hover {
   opacity: 1;
-}
-.heart .fas:active {
-  opacity: 1;
+  outline: none;
 }
 
 .header-container {
@@ -255,6 +260,7 @@
   box-sizing: border-box;
   height: 72px;
   gap: 28px;
+  position: relative;
 }
 .list-card i:hover {
   color: #9356DC;
@@ -275,7 +281,7 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  left: 3.5%;
+  left: 0.5%;
   transform: translateX(-50%);
 }
 
